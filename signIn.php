@@ -15,9 +15,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 </head>
 <body>
-<h1>Hello!</h1>
+<h1>Sign In!</h1>
 <br>
-<form method="post" action="registration.php">
+<form method="post" action="login.php">
     <input type="text" name="login" placeholder="Login..."><br><br>
     <input type="password" name="pwd" placeholder="Password..."><br><br>
     <button type="submit">Sign In!</button>

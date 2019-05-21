@@ -28,13 +28,451 @@
       <change afterPath="$PROJECT_DIR$/../firstSymfony/src/Controller/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../firstSymfony/src/Kernel.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../firstSymfony/symfony.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/mroz.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signIn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signUp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signIn.php" beforeDir="false" afterPath="$PROJECT_DIR$/signIn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/signUp.php" afterDir="false" />
     </list>
+    <ignored path="../bakerydemo/" />
+    <ignored path="../codewars/" />
+    <ignored path="../logsys/" />
+    <ignored path="../symfony/" />
+    <ignored path="../SymfProject/" />
+    <ignored path="../tutorialPI/" />
+    <ignored path="../bakery/config/sql/._db_acl.php" />
+    <ignored path="../bakery/config/sql/._db_acl.sql" />
+    <ignored path="../bakery/config/sql/._i18n.php" />
+    <ignored path="../bakery/config/sql/._i18n.sql" />
+    <ignored path="../bakery/config/sql/._schema.php" />
+    <ignored path="../bakery/config/sql/._sessions.php" />
+    <ignored path="../bakery/config/sql/._sessions.sql" />
+    <ignored path="../bakery/config/sql/db_acl.php" />
+    <ignored path="../bakery/config/sql/db_acl.sql" />
+    <ignored path="../bakery/config/sql/i18n.php" />
+    <ignored path="../bakery/config/sql/i18n.sql" />
+    <ignored path="../bakery/config/sql/schema.php" />
+    <ignored path="../bakery/config/sql/sessions.php" />
+    <ignored path="../bakery/config/sql/sessions.sql" />
+    <ignored path="../bakery/config/._acl.ini.php" />
+    <ignored path="../bakery/config/._bootstrap.php" />
+    <ignored path="../bakery/config/._core.php" />
+    <ignored path="../bakery/config/._database.php.default" />
+    <ignored path="../bakery/config/._inflections.php" />
+    <ignored path="../bakery/config/._routes.php" />
+    <ignored path="../bakery/config/._sql" />
+    <ignored path="../bakery/config/acl.ini.php" />
+    <ignored path="../bakery/config/bootstrap.php" />
+    <ignored path="../bakery/config/core.php" />
+    <ignored path="../bakery/config/database.php.default" />
+    <ignored path="../bakery/config/inflections.php" />
+    <ignored path="../bakery/config/routes.php" />
+    <ignored path="../bakery/controllers/components/._empty" />
+    <ignored path="../bakery/controllers/components/empty" />
+    <ignored path="../bakery/controllers/._components" />
+    <ignored path="../bakery/controllers/._pages_controller.php" />
+    <ignored path="../bakery/controllers/pages_controller.php" />
+    <ignored path="../bakery/locale/eng/LC_MESSAGES/._empty" />
+    <ignored path="../bakery/locale/eng/LC_MESSAGES/empty" />
+    <ignored path="../bakery/locale/eng/._LC_MESSAGES" />
+    <ignored path="../bakery/locale/._eng" />
+    <ignored path="../bakery/models/behaviors/._empty" />
+    <ignored path="../bakery/models/behaviors/empty" />
+    <ignored path="../bakery/models/._behaviors" />
+    <ignored path="../bakery/plugins/._empty" />
+    <ignored path="../bakery/plugins/empty" />
+    <ignored path="../bakery/tests/cases/behaviors/._empty" />
+    <ignored path="../bakery/tests/cases/behaviors/empty" />
+    <ignored path="../bakery/tests/cases/components/._empty" />
+    <ignored path="../bakery/tests/cases/components/empty" />
+    <ignored path="../bakery/tests/cases/controllers/._empty" />
+    <ignored path="../bakery/tests/cases/controllers/empty" />
+    <ignored path="../bakery/tests/cases/helpers/._empty" />
+    <ignored path="../bakery/tests/cases/helpers/empty" />
+    <ignored path="../bakery/tests/cases/models/._empty" />
+    <ignored path="../bakery/tests/cases/models/empty" />
+    <ignored path="../bakery/tests/cases/._behaviors" />
+    <ignored path="../bakery/tests/cases/._components" />
+    <ignored path="../bakery/tests/cases/._controllers" />
+    <ignored path="../bakery/tests/cases/._helpers" />
+    <ignored path="../bakery/tests/cases/._models" />
+    <ignored path="../bakery/tests/._cases" />
+    <ignored path="../bakery/vendors/shells/templates/._form.ctp" />
+    <ignored path="../bakery/vendors/shells/templates/._index.ctp" />
+    <ignored path="../bakery/vendors/shells/templates/._view.ctp" />
+    <ignored path="../bakery/vendors/shells/templates/form.ctp" />
+    <ignored path="../bakery/vendors/shells/templates/index.ctp" />
+    <ignored path="../bakery/vendors/shells/templates/view.ctp" />
+    <ignored path="../bakery/vendors/shells/._bake.php" />
+    <ignored path="../bakery/vendors/shells/._templates" />
+    <ignored path="../bakery/vendors/shells/bake.php" />
+    <ignored path="../bakery/vendors/._shells" />
+    <ignored path="../bakery/views/elements/email/html/._default.ctp" />
+    <ignored path="../bakery/views/elements/email/html/default.ctp" />
+    <ignored path="../bakery/views/elements/email/text/._default.ctp" />
+    <ignored path="../bakery/views/elements/email/text/default.ctp" />
+    <ignored path="../bakery/views/elements/email/._html" />
+    <ignored path="../bakery/views/elements/email/._text" />
+    <ignored path="../bakery/views/elements/._email" />
+    <ignored path="../bakery/views/helpers/._empty" />
+    <ignored path="../bakery/views/helpers/empty" />
+    <ignored path="../bakery/views/layouts/email/html/._default.ctp" />
+    <ignored path="../bakery/views/layouts/email/html/default.ctp" />
+    <ignored path="../bakery/views/layouts/email/text/._default.ctp" />
+    <ignored path="../bakery/views/layouts/email/text/default.ctp" />
+    <ignored path="../bakery/views/layouts/email/._html" />
+    <ignored path="../bakery/views/layouts/email/._text" />
+    <ignored path="../bakery/views/layouts/js/._default.ctp" />
+    <ignored path="../bakery/views/layouts/js/default.ctp" />
+    <ignored path="../bakery/views/layouts/rss/._default.ctp" />
+    <ignored path="../bakery/views/layouts/rss/default.ctp" />
+    <ignored path="../bakery/views/layouts/xml/._default.ctp" />
+    <ignored path="../bakery/views/layouts/xml/default.ctp" />
+    <ignored path="../bakery/views/layouts/._ajax.ctp" />
+    <ignored path="../bakery/views/layouts/._default.ctp" />
+    <ignored path="../bakery/views/layouts/._email" />
+    <ignored path="../bakery/views/layouts/._flash.ctp" />
+    <ignored path="../bakery/views/layouts/._js" />
+    <ignored path="../bakery/views/layouts/._rss" />
+    <ignored path="../bakery/views/layouts/._xml" />
+    <ignored path="../bakery/views/layouts/ajax.ctp" />
+    <ignored path="../bakery/views/layouts/default.ctp" />
+    <ignored path="../bakery/views/layouts/flash.ctp" />
+    <ignored path="../bakery/views/pages/._home.ctp" />
+    <ignored path="../bakery/views/pages/home.ctp" />
+    <ignored path="../bakery/views/._elements" />
+    <ignored path="../bakery/views/._helpers" />
+    <ignored path="../bakery/views/._layouts" />
+    <ignored path="../bakery/views/._pages" />
+    <ignored path="../bakery/webroot/css/._cake.generic.css" />
+    <ignored path="../bakery/webroot/css/cake.generic.css" />
+    <ignored path="../bakery/webroot/img/._cake.icon.gif" />
+    <ignored path="../bakery/webroot/img/._cake.power.gif" />
+    <ignored path="../bakery/webroot/img/cake.icon.gif" />
+    <ignored path="../bakery/webroot/img/cake.power.gif" />
+    <ignored path="../bakery/webroot/js/._vendors.php" />
+    <ignored path="../bakery/webroot/js/vendors.php" />
+    <ignored path="../bakery/webroot/._.htaccess" />
+    <ignored path="../bakery/webroot/._css" />
+    <ignored path="../bakery/webroot/._css.php" />
+    <ignored path="../bakery/webroot/._favicon.ico" />
+    <ignored path="../bakery/webroot/._img" />
+    <ignored path="../bakery/webroot/._index.php" />
+    <ignored path="../bakery/webroot/._js" />
+    <ignored path="../bakery/webroot/._test.php" />
+    <ignored path="../bakery/webroot/.htaccess" />
+    <ignored path="../bakery/webroot/css.php" />
+    <ignored path="../bakery/webroot/favicon.ico" />
+    <ignored path="../bakery/webroot/index.php" />
+    <ignored path="../bakery/webroot/test.php" />
+    <ignored path="../bakery/._.gitignore" />
+    <ignored path="../bakery/._.htaccess" />
+    <ignored path="../bakery/._app_controller.php" />
+    <ignored path="../bakery/._app_helper.php" />
+    <ignored path="../bakery/._app_model.php" />
+    <ignored path="../bakery/._config" />
+    <ignored path="../bakery/._controllers" />
+    <ignored path="../bakery/._index.php" />
+    <ignored path="../bakery/._locale" />
+    <ignored path="../bakery/._models" />
+    <ignored path="../bakery/._plugins" />
+    <ignored path="../bakery/._tests" />
+    <ignored path="../bakery/._tmp" />
+    <ignored path="../bakery/._vendors" />
+    <ignored path="../bakery/._views" />
+    <ignored path="../bakery/._webroot" />
+    <ignored path="../bakery/.gitignore" />
+    <ignored path="../bakery/.htaccess" />
+    <ignored path="../bakery/app_controller.php" />
+    <ignored path="../bakery/app_helper.php" />
+    <ignored path="../bakery/app_model.php" />
+    <ignored path="../bakery/index.php" />
+    <ignored path="../dashboard/de/faq.html" />
+    <ignored path="../dashboard/de/howto.html" />
+    <ignored path="../dashboard/de/howto_platform_links.html" />
+    <ignored path="../dashboard/de/howto_shared_links.html" />
+    <ignored path="../dashboard/de/index.html" />
+    <ignored path="../dashboard/docs/images/access-phpmyadmin-remotely/image1.png" />
+    <ignored path="../dashboard/docs/images/reset-mysql-password/image1.png" />
+    <ignored path="../dashboard/docs/images/reset-mysql-password/image2.png" />
+    <ignored path="../dashboard/docs/access-phpmyadmin-remotely.html" />
+    <ignored path="../dashboard/docs/access-phpmyadmin-remotely.pdf" />
+    <ignored path="../dashboard/docs/access-phpmyadmin-remotely.pdfmarks" />
+    <ignored path="../dashboard/docs/reset-mysql-password.html" />
+    <ignored path="../dashboard/docs/reset-mysql-password.pdf" />
+    <ignored path="../dashboard/docs/reset-mysql-password.pdfmarks" />
+    <ignored path="../dashboard/es/faq.html" />
+    <ignored path="../dashboard/es/howto.html" />
+    <ignored path="../dashboard/es/howto_platform_links.html" />
+    <ignored path="../dashboard/es/howto_shared_links.html" />
+    <ignored path="../dashboard/es/index.html" />
+    <ignored path="../dashboard/fr/faq.html" />
+    <ignored path="../dashboard/fr/howto.html" />
+    <ignored path="../dashboard/fr/howto_platform_links.html" />
+    <ignored path="../dashboard/fr/howto_shared_links.html" />
+    <ignored path="../dashboard/fr/index.html" />
+    <ignored path="../dashboard/hu/faq.html" />
+    <ignored path="../dashboard/hu/howto.html" />
+    <ignored path="../dashboard/hu/howto_platform_links.html" />
+    <ignored path="../dashboard/hu/howto_shared_links.html" />
+    <ignored path="../dashboard/hu/index.html" />
+    <ignored path="../dashboard/images/addons/beetailer-icon.png" />
+    <ignored path="../dashboard/images/addons/elegantthemes-icon.png" />
+    <ignored path="../dashboard/images/addons/rockettheme-icon.png" />
+    <ignored path="../dashboard/images/addons/sugaroutfitters-icon.png" />
+    <ignored path="../dashboard/images/addons/templatemonster-icon.png" />
+    <ignored path="../dashboard/images/addons/themeforest-icon.png" />
+    <ignored path="../dashboard/images/addons/woothemes-icon.png" />
+    <ignored path="../dashboard/images/addons/wpmu-icon.png" />
+    <ignored path="../dashboard/images/bitnami-xampp/image1.png" />
+    <ignored path="../dashboard/images/bitnami-xampp/image2.png" />
+    <ignored path="../dashboard/images/bitnami-xampp/image3.png" />
+    <ignored path="../dashboard/images/bitnami-xampp/image4.png" />
+    <ignored path="../dashboard/images/bitnami-xampp/image5.png" />
+    <ignored path="../dashboard/images/bitnami-xampp/image6.png" />
+    <ignored path="../dashboard/images/bitnami-xampp/image7.png" />
+    <ignored path="../dashboard/images/blog/download-xampp-vm.png" />
+    <ignored path="../dashboard/images/blog/heartbleed-affected-osx.png" />
+    <ignored path="../dashboard/images/blog/heartbleed-affected.png" />
+    <ignored path="../dashboard/images/blog/heartbleed-fixed.png" />
+    <ignored path="../dashboard/images/blog/phpinfo-section-1.png" />
+    <ignored path="../dashboard/images/blog/phpinfo-section-2.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-cakephp-1.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-cakephp-10.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-cakephp-11.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-cakephp-2.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-cakephp-3.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-cakephp-4.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-cakephp-5.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-cakephp-6.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-cakephp-7.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-cakephp-8.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-cakephp-9.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-general.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-manager.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-network.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-php-finder.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-php-output.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-tray.png" />
+    <ignored path="../dashboard/images/blog/xampp-vm-volumes.png" />
+    <ignored path="../dashboard/images/flags/cn.png" />
+    <ignored path="../dashboard/images/flags/de.png" />
+    <ignored path="../dashboard/images/flags/en.png" />
+    <ignored path="../dashboard/images/flags/es.png" />
+    <ignored path="../dashboard/images/flags/fr.png" />
+    <ignored path="../dashboard/images/flags/hu.png" />
+    <ignored path="../dashboard/images/flags/it.png" />
+    <ignored path="../dashboard/images/flags/jp.png" />
+    <ignored path="../dashboard/images/flags/pl.png" />
+    <ignored path="../dashboard/images/flags/pt.png" />
+    <ignored path="../dashboard/images/flags/pt_br.png" />
+    <ignored path="../dashboard/images/flags/ro.png" />
+    <ignored path="../dashboard/images/flags/ru.png" />
+    <ignored path="../dashboard/images/flags/tr.png" />
+    <ignored path="../dashboard/images/flags/ur.png" />
+    <ignored path="../dashboard/images/flags/zh_cn.png" />
+    <ignored path="../dashboard/images/flags/zh_tw.png" />
+    <ignored path="../dashboard/images/screenshots/xampp-linux-start.jpg" />
+    <ignored path="../dashboard/images/screenshots/xampp-macosx-download-installer.jpg" />
+    <ignored path="../dashboard/images/screenshots/xampp-macosx-launch-credentials.jpg" />
+    <ignored path="../dashboard/images/screenshots/xampp-macosx-run-installer.jpg" />
+    <ignored path="../dashboard/images/screenshots/xampp-macosx-stack-manager-general.jpg" />
+    <ignored path="../dashboard/images/screenshots/xampp-macosx-stack-manager-network.jpg" />
+    <ignored path="../dashboard/images/screenshots/xampp-macosx-stack-manager-services.jpg" />
+    <ignored path="../dashboard/images/screenshots/xampp-macosx-stack-manager-volumes.jpg" />
+    <ignored path="../dashboard/images/screenshots/xampp-macosx-stack-manager.jpg" />
+    <ignored path="../dashboard/images/screenshots/xampp-macosx-start.jpg" />
+    <ignored path="../dashboard/images/screenshots/xampp-macosx-wordpress.jpg" />
+    <ignored path="../dashboard/images/screenshots/xampp-windows-start.jpg" />
+    <ignored path="../dashboard/images/stamps/stamp-173x38.gif" />
+    <ignored path="../dashboard/images/stamps/stamp-80x15.gif" />
+    <ignored path="../dashboard/images/stamps/stamp-88x31.gif" />
+    <ignored path="../dashboard/images/team/beltran-rueda.png" />
+    <ignored path="../dashboard/images/team/daniel-lopez.png" />
+    <ignored path="../dashboard/images/team/kai-seidler.jpg" />
+    <ignored path="../dashboard/images/team/kay-vogelgesang.jpg" />
+    <ignored path="../dashboard/images/team/paul-hinz.jpg" />
+    <ignored path="../dashboard/images/addons-video-thumb.png" />
+    <ignored path="../dashboard/images/apple-logo.png" />
+    <ignored path="../dashboard/images/background.png" />
+    <ignored path="../dashboard/images/bitnami-xampp.png" />
+    <ignored path="../dashboard/images/fastly-logo.png" />
+    <ignored path="../dashboard/images/fastly-logo@2x.png" />
+    <ignored path="../dashboard/images/favicon.png" />
+    <ignored path="../dashboard/images/linux-logo.png" />
+    <ignored path="../dashboard/images/middleman.png" />
+    <ignored path="../dashboard/images/pdf-icon.png" />
+    <ignored path="../dashboard/images/social-icons-large.png" />
+    <ignored path="../dashboard/images/social-icons-large@2x.png" />
+    <ignored path="../dashboard/images/social-icons.png" />
+    <ignored path="../dashboard/images/social-icons@2x.png" />
+    <ignored path="../dashboard/images/sourceforge-logo.png" />
+    <ignored path="../dashboard/images/sourceforge-logo@2x.png" />
+    <ignored path="../dashboard/images/stack-icons.png" />
+    <ignored path="../dashboard/images/stack-icons@2x.png" />
+    <ignored path="../dashboard/images/twitter-bird.png" />
+    <ignored path="../dashboard/images/windows-logo.png" />
+    <ignored path="../dashboard/images/xampp-cloud.png" />
+    <ignored path="../dashboard/images/xampp-cloud@2x.png" />
+    <ignored path="../dashboard/images/xampp-logo.svg" />
+    <ignored path="../dashboard/images/xampp-newsletter-logo.png" />
+    <ignored path="../dashboard/it/faq.html" />
+    <ignored path="../dashboard/it/howto.html" />
+    <ignored path="../dashboard/it/howto_platform_links.html" />
+    <ignored path="../dashboard/it/howto_shared_links.html" />
+    <ignored path="../dashboard/it/index.html" />
+    <ignored path="../dashboard/javascripts/all.js" />
+    <ignored path="../dashboard/javascripts/modernizr.js" />
+    <ignored path="../dashboard/jp/faq.html" />
+    <ignored path="../dashboard/jp/howto.html" />
+    <ignored path="../dashboard/jp/howto_platform_links.html" />
+    <ignored path="../dashboard/jp/howto_shared_links.html" />
+    <ignored path="../dashboard/jp/index.html" />
+    <ignored path="../dashboard/pl/faq.html" />
+    <ignored path="../dashboard/pl/howto.html" />
+    <ignored path="../dashboard/pl/howto_platform_links.html" />
+    <ignored path="../dashboard/pl/howto_shared_links.html" />
+    <ignored path="../dashboard/pl/index.html" />
+    <ignored path="../dashboard/pt_br/faq.html" />
+    <ignored path="../dashboard/pt_br/howto.html" />
+    <ignored path="../dashboard/pt_br/howto_platform_links.html" />
+    <ignored path="../dashboard/pt_br/howto_shared_links.html" />
+    <ignored path="../dashboard/pt_br/index.html" />
+    <ignored path="../dashboard/ro/faq.html" />
+    <ignored path="../dashboard/ro/howto.html" />
+    <ignored path="../dashboard/ro/howto_platform_links.html" />
+    <ignored path="../dashboard/ro/howto_shared_links.html" />
+    <ignored path="../dashboard/ro/index.html" />
+    <ignored path="../dashboard/ru/faq.html" />
+    <ignored path="../dashboard/ru/howto.html" />
+    <ignored path="../dashboard/ru/howto_platform_links.html" />
+    <ignored path="../dashboard/ru/howto_shared_links.html" />
+    <ignored path="../dashboard/ru/index.html" />
+    <ignored path="../dashboard/stylesheets/all-rtl.css" />
+    <ignored path="../dashboard/stylesheets/all.css" />
+    <ignored path="../dashboard/stylesheets/asciidoctor.css" />
+    <ignored path="../dashboard/stylesheets/normalize.css" />
+    <ignored path="../dashboard/tr/faq.html" />
+    <ignored path="../dashboard/tr/howto.html" />
+    <ignored path="../dashboard/tr/howto_platform_links.html" />
+    <ignored path="../dashboard/tr/howto_shared_links.html" />
+    <ignored path="../dashboard/tr/index.html" />
+    <ignored path="../dashboard/ur/faq.html" />
+    <ignored path="../dashboard/ur/howto.html" />
+    <ignored path="../dashboard/ur/howto_platform_links.html" />
+    <ignored path="../dashboard/ur/howto_shared_links.html" />
+    <ignored path="../dashboard/ur/index.html" />
+    <ignored path="../dashboard/zh_cn/faq.html" />
+    <ignored path="../dashboard/zh_cn/howto.html" />
+    <ignored path="../dashboard/zh_cn/howto_platform_links.html" />
+    <ignored path="../dashboard/zh_cn/howto_shared_links.html" />
+    <ignored path="../dashboard/zh_cn/index.html" />
+    <ignored path="../dashboard/zh_tw/faq.html" />
+    <ignored path="../dashboard/zh_tw/howto.html" />
+    <ignored path="../dashboard/zh_tw/howto_platform_links.html" />
+    <ignored path="../dashboard/zh_tw/howto_shared_links.html" />
+    <ignored path="../dashboard/zh_tw/index.html" />
+    <ignored path="../dashboard/404.html" />
+    <ignored path="../dashboard/faq.html" />
+    <ignored path="../dashboard/favicon.ico" />
+    <ignored path="../dashboard/howto.html" />
+    <ignored path="../dashboard/howto_platform_links.html" />
+    <ignored path="../dashboard/howto_shared_links.html" />
+    <ignored path="../dashboard/index.html" />
+    <ignored path="../dashboard/phpinfo.php" />
+    <ignored path="../img/module_table_bottom.png" />
+    <ignored path="../img/module_table_top.png" />
+    <ignored path="../loginSys/.idea/deployment.xml" />
+    <ignored path="../loginSys/.idea/encodings.xml" />
+    <ignored path="../loginSys/.idea/loginSys.iml" />
+    <ignored path="../loginSys/.idea/misc.xml" />
+    <ignored path="../loginSys/.idea/modules.xml" />
+    <ignored path="../loginSys/.idea/vcs.xml" />
+    <ignored path="../loginSys/.idea/workspace.xml" />
+    <ignored path="../loginSystem/.idea/workspace.xml" />
+    <ignored path="../osadnicy/.idea/encodings.xml" />
+    <ignored path="../osadnicy/.idea/misc.xml" />
+    <ignored path="../osadnicy/.idea/modules.xml" />
+    <ignored path="../osadnicy/.idea/osadnicy.iml" />
+    <ignored path="../osadnicy/.idea/workspace.xml" />
+    <ignored path="../osadnicy/._uzytkownicy.sql" />
+    <ignored path="../osadnicy/connect.php" />
+    <ignored path="../osadnicy/gra.php" />
+    <ignored path="../osadnicy/index.php" />
+    <ignored path="../osadnicy/logout.php" />
+    <ignored path="../osadnicy/rejestracja.php" />
+    <ignored path="../osadnicy/uzytkownicy.sql" />
+    <ignored path="../osadnicy/witamy.php" />
+    <ignored path="../osadnicy/zaloguj.php" />
+    <ignored path="../PD/.idea/inspectionProfiles/Project_Default.xml" />
+    <ignored path="../PD/.idea/encodings.xml" />
+    <ignored path="../PD/.idea/jsLibraryMappings.xml" />
+    <ignored path="../PD/.idea/misc.xml" />
+    <ignored path="../PD/.idea/modules.xml" />
+    <ignored path="../PD/.idea/PDO@.iml" />
+    <ignored path="../PD/.idea/workspace.xml" />
+    <ignored path="../PD/img/._hexellence.png" />
+    <ignored path="../PD/img/hexellence.png" />
+    <ignored path="../PD/admin.php" />
+    <ignored path="../PD/config.php" />
+    <ignored path="../PD/database.php" />
+    <ignored path="../PD/index.php" />
+    <ignored path="../PD/list.php" />
+    <ignored path="../PD/logout.php" />
+    <ignored path="../PD/main.css" />
+    <ignored path="../PD/newsletter.sql" />
+    <ignored path="../PD/save.php" />
+    <ignored path="../PDO/.idea/encodings.xml" />
+    <ignored path="../PDO/.idea/misc.xml" />
+    <ignored path="../PDO/.idea/modules.xml" />
+    <ignored path="../PDO/.idea/PDO.iml" />
+    <ignored path="../PDO/.idea/workspace.xml" />
+    <ignored path="../PDO/img/._hexellence.png" />
+    <ignored path="../PDO/img/hexellence.png" />
+    <ignored path="../PDO/._admin.php" />
+    <ignored path="../PDO/._config.php" />
+    <ignored path="../PDO/._database.php" />
+    <ignored path="../PDO/._img" />
+    <ignored path="../PDO/._index.php" />
+    <ignored path="../PDO/._list.php" />
+    <ignored path="../PDO/._logout.php" />
+    <ignored path="../PDO/._main.css" />
+    <ignored path="../PDO/._newsletter.sql" />
+    <ignored path="../PDO/._save.php" />
+    <ignored path="../PDO/admin.php" />
+    <ignored path="../PDO/config.php" />
+    <ignored path="../PDO/database.php" />
+    <ignored path="../PDO/index.php" />
+    <ignored path="../PDO/list.php" />
+    <ignored path="../PDO/logout.php" />
+    <ignored path="../PDO/main.css" />
+    <ignored path="../PDO/newsletter.sql" />
+    <ignored path="../PDO/save.php" />
+    <ignored path="../quiz/._.DS_Store" />
+    <ignored path="../quiz/._dbconnect.php" />
+    <ignored path="../quiz/._index.php" />
+    <ignored path="../quiz/._POLECENIA.txt" />
+    <ignored path="../quiz/._poprawne_odpowiedzi.txt" />
+    <ignored path="../quiz/._pytania.sql" />
+    <ignored path="../quiz/._zapytanie.txt" />
+    <ignored path="../quiz/dbconnect.php" />
+    <ignored path="../quiz/index.php" />
+    <ignored path="../quiz/POLECENIA.txt" />
+    <ignored path="../quiz/poprawne_odpowiedzi.txt" />
+    <ignored path="../quiz/pytania.sql" />
+    <ignored path="../quiz/zapytanie.txt" />
+    <ignored path="../._bakery" />
+    <ignored path="../._quiz" />
+    <ignored path="../applications.html" />
+    <ignored path="../bitnami.css" />
+    <ignored path="../favicon.ico" />
+    <ignored path="../index.php" />
+    <ignored path=".idea/encodings.xml" />
+    <ignored path=".idea/liberFacies.iml" />
+    <ignored path=".idea/misc.xml" />
+    <ignored path=".idea/modules.xml" />
+    <ignored path="README.md" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,24 +509,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/signIn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            <state relative-caret-position="204">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/signUp.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/registration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -103,8 +548,12 @@
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/signIn.php" />
         <option value="$PROJECT_DIR$/main.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/signIn.php" />
+        <option value="$PROJECT_DIR$/database.php" />
+        <option value="$PROJECT_DIR$/signUp.php" />
+        <option value="$PROJECT_DIR$/registration.php" />
       </list>
     </option>
   </component>
@@ -139,6 +588,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="directory&#10;repository" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -165,12 +615,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558423131089</updated>
-      <workItem from="1558423132461" duration="2127000" />
+      <workItem from="1558423132461" duration="8064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2127000" />
+    <option name="totallyTimeSpent" value="8064000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -192,14 +642,14 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" weight="0.329927" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50080776" side_tool="true" weight="0.329927" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329927" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49919224" weight="0.329927" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -241,8 +691,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signUp.php">
+    <entry file="file://$PROJECT_DIR$/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../logsys/log/includes/signup.inc.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../logsys/log/signup.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../logsys/log/includes/dbh.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -257,15 +738,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/signIn.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+        <state relative-caret-position="204">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.php">
+    <entry file="file://$PROJECT_DIR$/signUp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="85">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
