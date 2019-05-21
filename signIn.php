@@ -15,7 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 </head>
 <body>
-<h1>Sign In!</h1>
+<center>
+<h1 style="color: cornflowerblue">Sign In!</h1>
 <br>
 <form method="post" action="login.php">
     <input type="text" name="login" placeholder="Login..."><br><br>
@@ -23,7 +24,7 @@
     <button type="submit">Sign In!</button>
 
 </form>
-
+</center>
 
 </body>
 </html>
