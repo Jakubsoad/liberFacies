@@ -12,15 +12,7 @@ if (!isset($_POST['login']))
     exit();
 }
 session_start();
-$servername = "localhost";
-$dBUsername = "root";
-$dBPassword = "";
-$dBName = "liberFacies";
-
-$conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
-
-if (!$conn)
-    die("Connection error: " . mysqli_connect_error());
+require_once "dbConn.php";
 
 $login = mysqli_real_escape_string($conn, $_POST['login']);
 $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
@@ -45,6 +37,7 @@ elseif (!password_verify($pwd, $q))
 }
 else
 {
+
     $_SESSION['login'] = $login;
     header("Location: main.php");
 }

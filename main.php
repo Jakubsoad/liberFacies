@@ -5,14 +5,15 @@
  * Date: 2019-05-21
  * Time: 10:10
  */
-session_start();
+
 if (!isset($_SESSION['login']))
 {
     header("Location: index.php");
     exit();
 }
-else
-{
-    echo "Hello ";
-    echo $_SESSION['login'] . "!";
-}
+session_start();
+require_once "dbConn.php";
+echo "Hello ";
+echo $_SESSION['login'] . "!";
+//sprawdzic czy about jest puste, jezeli tak to zaproponowac wypelnienie
+$query = mysqli_query($conn, "SELECT ")

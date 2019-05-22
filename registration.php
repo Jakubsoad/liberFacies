@@ -11,15 +11,7 @@
 if (isset($_POST['login'])) {
     session_start();
 
-    $servername = "localhost";
-    $dBUsername = "root";
-    $dBPassword = "";
-    $dBName = "liberFacies";
-
-    $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
-
-    if (!$conn)
-        die("Connection error: " . mysqli_connect_error());
+   require_once "dbConn.php";
 
     $login = mysqli_real_escape_string($conn, $_POST['login']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -58,12 +50,10 @@ if (isset($_POST['login'])) {
     $u = mysqli_insert_id($conn);
 
 
-    $q2 = mysqli_query($conn, "SELECT login FROM User WHERE id='$u'");
-    $user = mysqli_fetch_assoc($q2);
+    $id = mysqli_fetch_assoc(mysqli_query($conn, "SELECT id FROM User WHERE login='$login'"));
+    $id = implode($id);
 
-    foreach ($user as $q) {
-        echo "Hello " . $q . "!<br>";
-    }
+    $query = mysqli_query($conn, "INSERT INTO info VALUES (NULL, '$id', '', '')");
 }
 else
     header("Location: signUp.php");
