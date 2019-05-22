@@ -54,6 +54,8 @@ if (isset($_POST['login'])) {
     $id = implode($id);
 
     $query = mysqli_query($conn, "INSERT INTO info VALUES (NULL, '$id', '', '')");
+
+    header("Location: signIn.php");
 }
 else
     header("Location: signUp.php");
