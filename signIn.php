@@ -5,6 +5,11 @@
  * Date: 2019-05-21
  * Time: 10:09
  */
+session_start();
+if (isset($_SESSION['error'])) {
+    echo '<p style="color:red">'.$_SESSION['error'].'</p>';
+    unset($_SESSION['error']);
+}
 ?>
 
 <!DOCTYPE html>

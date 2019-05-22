@@ -5,5 +5,14 @@
  * Date: 2019-05-21
  * Time: 10:10
  */
-
-echo $_POST['login']."<br>".$_POST['pwd'];
+session_start();
+if (!isset($_SESSION['login']))
+{
+    header("Location: index.php");
+    exit();
+}
+else
+{
+    echo "Hello ";
+    echo $_SESSION['login'] . "!";
+}
