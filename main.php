@@ -26,6 +26,7 @@ if (isset($_POST['about'])) {
     $getAbout = filter_input(INPUT_POST, 'about');
     $getAbout = mysqli_real_escape_string($conn, $getAbout);
     $q = mysqli_query($conn, "UPDATE info SET about='$getAbout' WHERE foreignID='$idUser'");
+    echo "<meta http-equiv='refresh' content='0'>";
 }
 //TODO logout system
 ?>
