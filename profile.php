@@ -6,3 +6,7 @@
  * Time: 10:54
  */
 
+session_start();
+
+$a = filter_input(INPUT_POST, 'profile');
+var_dump($a);

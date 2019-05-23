@@ -55,9 +55,11 @@ if (isset($_POST['login'])) {
 
 
     $id = mysqli_fetch_assoc(mysqli_query($conn, "SELECT id FROM User WHERE login='$login'"));
-    $id = implode($id);
+    $id = $id['id'];
 
-    $query = mysqli_query($conn, "INSERT INTO info VALUES (NULL, '$id', '', '')");
+    $query = mysqli_query($conn, "INSERT INTO info VALUES (NULL, '$id', '', '', '')");
+
+    $_SESSION['success']="Successful registration!";
 
     header("Location: signIn.php");
 }

@@ -27,7 +27,8 @@ $counter = 1;
 foreach ($querySearch as $q)
 {
     foreach ($q as $a) {
-        echo $counter .". ". $a."<br>";
-        $counter++;
+
+         echo $counter .". ". $a."<br>";
+         $counter++;
     }
 }

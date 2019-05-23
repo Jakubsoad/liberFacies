@@ -15,6 +15,11 @@ if (isset($_SESSION['login']))
     header("Location: main.php");
     exit();
 }
+if (isset($_SESSION['success']))
+{
+    echo '<p style="color:forestgreen">'.$_SESSION['success'].'</p>';
+    unset($_SESSION['success']);
+}
 ?>
 
 <!DOCTYPE html>
