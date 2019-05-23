@@ -63,6 +63,17 @@ if ($posts!='')
 <center>
         <h2>Hello <?=$_SESSION['login'] ?>!</h2>
         <br><br>
+    Search for friends!
+        <form action="search.php" method="post">
+            <input type="text" name="friend" placeholder="login/e-mail of Your friend!">
+            <br>
+            <input type="submit">
+        </form>
+    <?php if (isset($_SESSION['friend'])) {
+        echo $_SESSION['friend'];
+        unset($_SESSION['friend']);
+    }
+    ?>
         <br>
         <p><?= ($query3=='') ? "Write something about you" : "About You:"?></p>
         <br>
