@@ -80,7 +80,7 @@ if ($posts!='')
     }
     ?>
         <br>
-        <p><?=//TODO kasowanie i edytowanie aboutow
+        <p><?=//TODO edytowanie aboutow
             ($about=='') ? "Write something about you" : "About You:"?></p>
         <br>
 
