@@ -11,6 +11,11 @@ if (!isset($_POST['login']))
     header("Location: signIn.php");
     exit();
 }
+if (isset($_SESSION['login']))
+{
+    header("Location: main.php");
+    exit();
+}
 session_start();
 require_once "dbConn.php";
 

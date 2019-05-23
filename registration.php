@@ -6,8 +6,12 @@
  * Time: 10:16
  */
 
-//validation
-//connect with database
+
+if (isset($_SESSION['login']))
+{
+    header("Location: main.php");
+    exit();
+}
 if (isset($_POST['login'])) {
     session_start();
 

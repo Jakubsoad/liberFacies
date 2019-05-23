@@ -6,6 +6,12 @@
  * Time: 09:24
  */
 //TODO if logged->main.php
+session_start();
+if (isset($_SESSION['login']))
+{
+    header("Location: main.php");
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html>

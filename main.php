@@ -53,8 +53,10 @@ if (isset($_POST['about'])) {
                 </form>"
                 : $query3
             ?></p>
-
     </div>
+    <br><br>
+    <a href="logout.php">Logout!</a>
+
 </center>
 </body>
 </html>
