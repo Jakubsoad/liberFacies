@@ -28,7 +28,28 @@ if (isset($_POST['about'])) {
     $q = mysqli_query($conn, "UPDATE info SET about='$getAbout' WHERE foreignID='$idUser'");
     echo "<meta http-equiv='refresh' content='0'>";
 }
-//TODO logout system
+
+//odebranie postu i schowanie go do bazy
+if (isset($_POST['post']))
+{
+    $post = filter_input(INPUT_POST, 'post');
+    $post=mysqli_real_escape_string($conn, $post);
+    $query = mysqli_query($conn, "UPDATE info SET posts =concat(posts, '$post', ';') WHERE foreignID='$idUser'");
+    echo "<meta http-equiv='refresh' content='0'>";
+}
+//wyjęcie postów i wyświetlenie ich
+$posts= mysqli_query($conn, "select posts from info where foreignID='$idUser'");
+$posts=mysqli_fetch_assoc($posts);
+    $posts = implode($posts);
+if ($posts!='')
+    $posts = explode(';', $posts);
+
+
+//TODO szukanie znajomych
+//TODO dodawanie znajomych
+//TODO wyswietlanie profilu innych osob
+//TODO dodawanie zdjec
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,8 +59,8 @@ if (isset($_POST['about'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 </head>
 <body>
+<a href="logout.php">Logout!</a><br>
 <center>
-    <div>
         <h2>Hello <?=$_SESSION['login'] ?>!</h2>
         <br><br>
         <br>
@@ -53,9 +74,31 @@ if (isset($_POST['about'])) {
                 </form>"
                 : $query3
             ?></p>
-    </div>
     <br><br>
-    <a href="logout.php">Logout!</a>
+    <p>
+        What are You thinking about?
+        <form action="main.php" method="post">
+        <input type="text" name="post">
+        <input type="submit" value="submit">
+    </form>
+    </p>
+    <p>
+        <?php if ($posts!="") {
+        $counter=1;
+        foreach ($posts as $p)
+        {
+            if ($p!='') {
+                echo "<p>$counter. $p</p><br>";
+                $counter++;
+            }
+        }
+
+        }
+        else
+            echo "Nothing to display! Write something :)";
+        ?>
+    </p>
+
 
 </center>
 </body>
