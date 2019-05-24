@@ -28,7 +28,8 @@ foreach ($querySearch as $q)
 {
     foreach ($q as $a) {
 
-         echo $counter .". ". $a."<br>";
+         //echo $counter .". ". $a."<br>";
+         echo "<a href='profile.php?id={$a}>'".$counter .". ". $a."</a><br>";
          $counter++;
     }
 }
