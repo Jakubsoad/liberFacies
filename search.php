@@ -13,8 +13,6 @@ $friend=filter_input(INPUT_POST, 'friend');
 $friend=mysqli_real_escape_string($conn, $friend);
 $query = "SELECT login from User where email like '%$friend%' or login like '%$friend%'";
 $querySearch = mysqli_query($conn, $query);
-
-
 $numRows = mysqli_num_rows($querySearch);
 if ($numRows==0)
 {
@@ -24,12 +22,27 @@ if ($numRows==0)
 }
 $querySearch = mysqli_fetch_all($querySearch);
 $counter = 1;
-foreach ($querySearch as $q)
-{
-    foreach ($q as $a) {
 
-         //echo $counter .". ". $a."<br>";
-         echo "<a href='profile.php?id={$a}>'".$counter .". ". $a."</a><br>";
-         $counter++;
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>liberFacies</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+</head>
+<body>
+<center>
+    <?php
+    foreach ($querySearch as $q)
+    {
+        foreach ($q as $a) {
+
+            echo "<a href='profile.php?login={$a}'>".$counter.". ".$a."</a><br>";
+            $counter++;
+        }
     }
-}
+    ?>
+</center>
+</body>
+</html>
