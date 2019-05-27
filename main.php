@@ -6,7 +6,6 @@
  * Time: 10:10
  */
 session_start();
-
 if (!isset($_SESSION['login']))
 {
     header("Location: index.php");
@@ -27,32 +26,80 @@ if (isset($_POST['about'])) {
     $getAbout = filter_input(INPUT_POST, 'about');
     $getAbout = mysqli_real_escape_string($conn, $getAbout);
     $q = mysqli_query($conn, "UPDATE info SET about='$getAbout' WHERE foreignID='$idUser'");
-    echo "<meta http-equiv='refresh' content='0'>";
+    header("Location: main.php");
 }
 
-//odebranie posta i schowanie go do bazy
-if (isset($_POST['post']))
+
+//usuwanie about
+$eraseAbout = filter_input(INPUT_GET, 'eraseAbout');
+
+if (isset($eraseAbout))
 {
-    $post = filter_input(INPUT_POST, 'post');
-    $post=mysqli_real_escape_string($conn, $post);
-    $queryAddPost = mysqli_query($conn, "UPDATE info SET posts =concat(posts, '$post', ';') WHERE foreignID='$idUser'");
-    echo "<meta http-equiv='refresh' content='0'>";
+    $eraseAboutDB = mysqli_query($conn, "UPDATE info SET about='' WHERE foreignID='$idUser'");
+    header("Location: main.php");
 }
+
 //wyjęcie postów i wyświetlenie ich
 $posts= mysqli_query($conn, "select posts from info where foreignID='$idUser'");
 $posts=mysqli_fetch_assoc($posts);
+
 
 if ($posts!='')
 {
     $posts = implode($posts);
     $posts = explode(';', $posts);
+
+}
+//odebranie posta i schowanie go do bazy
+if (isset($_POST['post']))
+{
+    //counter
+    $count=1;
+    foreach ($posts as $p)
+    {
+        if ($p!='') {
+            $count++;
+        }
+    }
+    $post = filter_input(INPUT_POST, 'post');
+    $post=mysqli_real_escape_string($conn, $post);
+    $queryAddPost = mysqli_query($conn, "UPDATE info SET posts = concat(posts, '$count' , '$post', ';') WHERE foreignID='$idUser'");
+    unset($_POST['post']);
+    header("Location: main.php");
+}
+
+
+//usuwanie postow
+$erasePost = filter_input(INPUT_GET, 'erasePost');
+
+if (isset($erasePost))
+{
+
+$erasePostNr = substr($erasePost, -1);
+
+$newPosts = '';
+        for($i = 1; $i<count($posts); $i++)
+        {
+            if (($posts[$i]!='') && ($erasePostNr!=$i)) {
+                $newPosts.=$p;
+        echo "p: "; var_dump($p);
+       echo "<br>newPosts "; var_dump($newPosts);
+       echo "<br>counter "; var_dump($counter);
+
+            }
+        }
+        exit();
+
+        $erasePostDB = mysqli_query($conn, "UPDATE info SET posts='$newPosts' WHERE foreignID='$idUser'");
+        header("Location: main.php");
+
+
 }
 
 
 
-//TODO szukanie znajomych
+
 //TODO dodawanie znajomych
-//TODO wyswietlanie profilu innych osob
 //TODO dodawanie zdjec
 
 ?>
@@ -66,6 +113,9 @@ if ($posts!='')
 <body>
 <a href="logout.php">Logout!</a><br>
 <center>
+
+        <h1 style="color: cornflowerblue">liberFacies</h1>
+
         <h2>Hello <?=$_SESSION['login'] ?>!</h2>
         <br><br>
     Search for friends!
@@ -80,7 +130,7 @@ if ($posts!='')
     }
     ?>
         <br>
-        <p><?=//TODO edytowanie aboutow
+        <p><?=
             ($about=='') ? "Write something about you" : "About You:"?></p>
         <br>
 
@@ -89,7 +139,7 @@ if ($posts!='')
             <input type=\"text\" name=\"about\">
             <input type=\"submit\">
                 </form>"
-                : $about
+                : $about . "<a href='main.php?eraseAbout=eraseAbout'><sup style='color: cornflowerblue'>x</sup></a>"
             ?></p>
     <br><br>
     <p>
@@ -97,8 +147,7 @@ if ($posts!='')
         <form action="main.php" method="post">
         <input type="text" name="post">
         <input type="submit">
-    </form>
-    </p>
+        </form>
     <p>
         <?php
         //TODO kasowanie i edytowanie postow
@@ -107,7 +156,8 @@ if ($posts!='')
         foreach ($posts as $p)
         {
             if ($p!='') {
-                echo "<p>$counter. $p</p><br>";
+                echo "<p>".$counter.". ". $p;
+                echo "<a href='main.php?erasePost=erasePost{$counter}'><sup style='color: cornflowerblue'>x</sup></a>";
                 $counter++;
             }
         }
@@ -115,6 +165,7 @@ if ($posts!='')
         }
         else
             echo "Nothing to display! Write something :)";
+
         ?>
     </p>
 

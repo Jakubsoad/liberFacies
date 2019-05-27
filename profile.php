@@ -43,6 +43,8 @@ if ($posts!='')
 <body>
 <a href="main.php">My profile!</a><br>
 <center>
+    <h1 style="color: cornflowerblue">liberFacies</h1>
+
     <br><br>
     Search for friends!
     <form action="search.php" method="post">

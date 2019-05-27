@@ -31,7 +31,9 @@ if (isset($_SESSION['success']))
 </head>
 <body>
 <center>
-<h1 style="color: cornflowerblue">Sign In!</h1>
+    <h1 style="color: cornflowerblue">liberFacies</h1>
+
+    <h2 style="color: cornflowerblue">Sign In!</h2>
 <br>
 <form method="post" action="login.php">
     <input type="text" name="login" placeholder="Login..."><br><br>

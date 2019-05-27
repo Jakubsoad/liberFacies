@@ -5,7 +5,7 @@
  * Date: 2019-05-21
  * Time: 09:24
  */
-//TODO if logged->main.php
+//if logged->main.php
 session_start();
 if (isset($_SESSION['login']))
 {
@@ -22,7 +22,9 @@ if (isset($_SESSION['login']))
 </head>
 <body>
 <center>
-<h1>Hello!</h1>
+    <h1 style="color: cornflowerblue">liberFacies</h1>
+
+    <h1>Hello!</h1>
 <br>
 <a href="signIn.php" style="color: cornflowerblue">Sign in!</a>
 <br><br>

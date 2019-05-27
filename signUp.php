@@ -22,7 +22,9 @@ if (isset($_SESSION['error'])) {
 </head>
 <body>
 <center>
-<h1 style="color: cornflowerblue">Sign Up!</h1>
+    <h1 style="color: cornflowerblue">liberFacies</h1>
+<br>
+    <h2 style="color: cornflowerblue">Sign Up!</h2>
 <br>
 <form action="registration.php" method="post">
     <input type="text" name="login" placeholder="Login..."><br><br>

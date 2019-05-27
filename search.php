@@ -33,6 +33,8 @@ $counter = 1;
 </head>
 <body>
 <center>
+    <h1 style="color: cornflowerblue">liberFacies</h1>
+<br>
     <?php
     foreach ($querySearch as $q)
     {
