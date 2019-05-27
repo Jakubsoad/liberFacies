@@ -28,8 +28,6 @@
       <change afterPath="$PROJECT_DIR$/../firstSymfony/src/Controller/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../firstSymfony/src/Kernel.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../firstSymfony/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
     </list>
     <ignored path="../bakerydemo/" />
     <ignored path="../codewars/" />
@@ -561,7 +559,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="1088">
               <caret line="69" column="7" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
             </state>
           </provider>
@@ -605,7 +603,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="777" />
@@ -662,12 +660,12 @@
       <option name="presentableId" value="Default" />
       <updated>1558423131089</updated>
       <workItem from="1558423132461" duration="36266000" />
-      <workItem from="1558643493154" duration="2885000" />
+      <workItem from="1558643493154" duration="3138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39151000" />
+    <option name="totallyTimeSpent" value="39404000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -679,7 +677,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49927008" visible="true" weight="0.16720517" />
@@ -836,7 +834,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="1088">
           <caret line="69" column="7" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
         </state>
       </provider>
