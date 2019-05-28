@@ -78,13 +78,13 @@ if (isset($erasePost))
 $erasePostNr = substr($erasePost, -1);
 
 $newPosts = '';
-        for($i = 1; $i<count($posts); $i++)
+        for($i = 0; $i<count($posts); $i++)
         {
-            if (($posts[$i]!='') && ($erasePostNr!=$i)) {
-                $newPosts.=$p;
-        echo "p: "; var_dump($p);
+            if (($posts[$i]!='') && ($erasePostNr!=$i+1)) {
+                $newPosts.= $posts[$i];
+        echo "posts: "; var_dump($posts[$i]);
        echo "<br>newPosts "; var_dump($newPosts);
-       echo "<br>counter "; var_dump($counter);
+       echo "<br>counter "; var_dump($i);
 
             }
         }
