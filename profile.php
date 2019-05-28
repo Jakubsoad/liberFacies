@@ -58,7 +58,7 @@ if ($posts!='')
     }
     ?>
     <br>
-    <p><?=//TODO edytowanie aboutow
+    <p><?=
         ($about=='') ? "<b>About</b>: <br><br>Nothing to display:(" : "<b>About $login:</b>"?></p>
     <br>
 
@@ -71,7 +71,6 @@ if ($posts!='')
         <b>Serious thoughts:</b>
     <p>
         <?php
-        //TODO kasowanie i edytowanie postow
         if ($posts!="") {
             $counter=1;
             foreach ($posts as $p)

@@ -82,25 +82,18 @@ $newPosts = '';
         {
             if (($posts[$i]!='') && ($erasePostNr!=$i+1)) {
                 $newPosts.= $posts[$i];
-        echo "posts: "; var_dump($posts[$i]);
-       echo "<br>newPosts "; var_dump($newPosts);
-       echo "<br>counter "; var_dump($i);
-
+                $newPosts.=";";
             }
         }
-        exit();
 
         $erasePostDB = mysqli_query($conn, "UPDATE info SET posts='$newPosts' WHERE foreignID='$idUser'");
         header("Location: main.php");
-
-
 }
 
 
 
 
 //TODO dodawanie znajomych
-//TODO dodawanie zdjec
 
 ?>
 <!DOCTYPE html>
@@ -119,9 +112,10 @@ $newPosts = '';
         <h2>Hello <?=$_SESSION['login'] ?>!</h2>
         <br><br>
     Search for friends!
+    <br><br>
         <form action="search.php" method="post">
             <input type="text" name="friend" placeholder="login/e-mail of Your friend!">
-            <br>
+            <br><br>
             <input type="submit">
         </form>
     <?php if (isset($_SESSION['friend'])) {
@@ -132,7 +126,6 @@ $newPosts = '';
         <br>
         <p><?=
             ($about=='') ? "Write something about you" : "About You:"?></p>
-        <br>
 
         <p><?= ($about=='') ?
                 "<form method=\"post\" action='main.php'>
@@ -150,7 +143,7 @@ $newPosts = '';
         </form>
     <p>
         <?php
-        //TODO kasowanie i edytowanie postow
+
         if ($posts!="") {
         $counter=1;
         foreach ($posts as $p)
@@ -161,7 +154,6 @@ $newPosts = '';
                 $counter++;
             }
         }
-
         }
         else
             echo "Nothing to display! Write something :)";
